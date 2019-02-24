@@ -1,0 +1,98 @@
+body {
+  font-family: "futura-pt", sans-serif; }
+
+@media (max-width: 1200px) {
+  .wrapper {
+    margin-left: 1.81818rem; } }
+
+@media (max-width: 992px) {
+  .wrapper {
+    margin-left: 2rem; } }
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin-left: 0; } }
+
+.wrapper .gridBlock .threeByGridBlock {
+  flex: 1 0 30%;
+  margin: 0 2rem 2rem 0;
+  background-color: #ffffff;
+  padding: 5rem 3.33333rem;
+  box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.15);
+  background-size: 35px; }
+  @media (max-width: 768px) {
+    .wrapper .gridBlock .threeByGridBlock {
+      flex: 1 0 30%; } }
+  @media (max-width: 768px) {
+    .wrapper .gridBlock .threeByGridBlock {
+      margin: 0 0 2rem 0; } }
+
+.blockElement.alignCenter.imageAlignTop.threeByGridBlock
+.blockContent
+h2
+> div
+> span
+> p {
+  text-align: center; }
+
+.blockContent p {
+  hyphens: auto;
+  text-align: justify; }
+
+.fourByGridBlock {
+  padding: 4rem 1rem 4rem 1rem; }
+
+.productShowcaseSection.paddingBottom {
+  padding-bottom: 4rem;
+  padding-top: 4rem; }
+
+.downloadSection {
+  background-color: #f5f5f5; }
+
+.productShowcaseSection p {
+  margin: 0 auto;
+  max-width: 900px;
+  font-size: 1.2rem; }
+
+.docMainWrapper .wrapper {
+  padding-top: 3rem;
+  margin-bottom: 4rem; }
+
+.mainContainer {
+  padding: 0; }
+  .mainContainer .wrapper .post .postHeader {
+    padding-top: 2rem; }
+
+.imageAlignTop .blockImage {
+  max-width: 100px; }
+
+.toc .toggleNav ul li a {
+  font-size: inherit; }
+
+.section-title {
+  color: #4a148c;
+  letter-spacing: 0.7px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1rem; }
+
+.nav-footer {
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 2rem; }
+
+.copyright {
+  margin-top: 4rem;
+  border-top: 1px solid white !important;
+  padding-top: 1rem; }
+
+.copyright a {
+  color: white; }
+
+.headerTitleWithLogo {
+  display: none !important; }
+
+a:hover,
+a:focus,
+a:visited {
+  background-color: #208C58 !important; }
