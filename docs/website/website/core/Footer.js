@@ -66,6 +66,11 @@ class Footer extends React.Component {
               rel="noreferrer noopener">
               Twitter
             </a>
+            <a
+              href="https://www.youtube.com/channel/UC5_wBOLCWath6q1iTgPPD5A"
+              target="_blank">
+              Youtube
+            </a>
           </div>
           <div>
             <h5>More</h5>
