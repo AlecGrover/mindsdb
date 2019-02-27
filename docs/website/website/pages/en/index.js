@@ -97,49 +97,35 @@ class Index extends React.Component {
     );   
 
     const Features = props => (
-      <Block layout="threeColumn">
+      <Block layout="fourColumn">
         {[
           {
             content:
-              "Create and use ML/AI with one line of code.",
-            image: iconUrl("icon1.png"),
-            imageAlign: "top",
-            title: "Simple"
-          },
-          {
-            content:
-              "Get not just predictions but also explanations to why such predictions, when you should and should not trust the model and what can you do to improve the quality of your predictions.",
-            image: iconUrl("icon2.png"),
-            imageAlign: "top",
-            title: "Interpretable"
-          },
-          {
-            content:
-              "Your data stays where you want it, mindsDB processes data locally as you can install it on your cloud or computer.",
-            image: iconUrl("icon3.png"),
-            imageAlign: "top",
-            title: "Privacy driven"
-          },
-          {
-            content:
-              "MindsDB trains, tests and then selects the most accurate state of the art AI models to apply to your data. Giving you super accurate predictions and forecasting.",
-            image: iconUrl("icon4.png"),
+              "MindsDB trains, tests and then selects the most accurate AI models to apply to your data. Giving you super accurate predictions and forecasting.",
+            image: iconUrl("icon5.png"),
             imageAlign: "top",
             title: "Accurate Predictions"
           },
           {
             content:
-              "We can improve the predictive power of your data by enabling the addition of the most reliable third party data from a variety of trusted sources.",
-            image: iconUrl("icon5.png"),
+              "Exceptionally easy to use, provide MindsDB access to your data and ask it what you want to forecast, and MindsDB takes it from there.",
+            image: iconUrl("icon7.png"),
             imageAlign: "top",
-            title: "Connect External Data"
+            title: "Super easy to use"
           },
           {
             content:
-              "Exceptionally easy to use, provide mindsDB access to your data and ask it what you want to forecast, mindsDB takes it from there.",
-            image: iconUrl("icon6.png"),
+              "Connect to your data where it lives. Run MindsDB on your local machine ensuring privacy, and that only you have access to your data.",
+            image: iconUrl("privacy.png"),
             imageAlign: "top",
-            title: "Super ease to use"
+            title: "Privacy Centric"
+          },
+          {
+            content:
+              "Easily understand your predictions with MindsDB explainability. We believe Why, is just as important as what!",
+            image: iconUrl("icon4.png"),
+            imageAlign: "top",
+            title: "Explainability – No Black Box"
           }
         ]}
       </Block>
