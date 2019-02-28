@@ -9,7 +9,7 @@ const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
+const MarkdownBlock = CompLibrary.MarkdownBlock; 
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
@@ -36,19 +36,6 @@ class HomeSplash extends React.Component {
       </div>
     );
 
-    const Logo = props => (
-      <div className="projectLogo">
-        <img src={props.img_src} alt="Mindsdb Logo" />
-      </div>
-    );
-
-    const ProjectTitle = () => (
-      <h2 className="projectTitle">
-        {siteConfig.title}
-        <small>{siteConfig.tagline}</small>
-      </h2>
-    );
-
     const PromoSection = props => (
       <div className="section promoSection">
         <div className="promoRow">
@@ -57,12 +44,11 @@ class HomeSplash extends React.Component {
       </div>
     );
 
-    const Button = props => (
-      <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
-          {props.children}
-        </a>
-      </div>
+    const ProjectTitle = () => (
+      <h2 className="projectTitle">
+        {siteConfig.title}
+        <small>{siteConfig.tagline}</small>
+      </h2>
     );
 
     return (
@@ -83,6 +69,22 @@ class Index extends React.Component {
     const {config: siteConfig, language = ''} = this.props;
     const {baseUrl} = siteConfig;
 
+    const PromoSection = props => (
+      <div className="section promoSection">
+        <div className="promoRow">
+          <div className="pluginRowBlock">{props.children}</div>
+        </div>
+      </div>
+    );
+    
+    const Button = props => (
+      <div className="pluginWrapper buttonWrapper">
+        <a className="button" href={props.href} target={props.target}>
+          {props.children}
+        </a>
+      </div>
+    );
+    
     const Block = props => (
       <Container
         padding={['bottom', 'top']}
@@ -123,12 +125,32 @@ class Index extends React.Component {
           {
             content:
               "Easily understand your predictions with MindsDB explainability. We believe Why, is just as important as what!",
-            image: iconUrl("icon4.png"),
+            image: iconUrl("icon3.png"),
             imageAlign: "top",
             title: "Explainability – No Black Box"
           }
         ]}
       </Block>
+    );
+    
+    const GetMindsdb = props => (
+      <div
+        className="productShowcaseSection paddingBottom downloadSection"
+        style={{ textAlign: "center" }}
+      >
+        <h1>About Mindsdb</h1>
+        <MarkdownBlock className="section-desc">
+        We’ve known for sometime that the power of Deep Learning based Predictive Models will revolutionize the business world. But there is an obvious bottle-neck: the need for highly skilled data scientists to build these sophisticated models. Our mission is to address this bottleneck.
+        Our product, MindsDB, integrates with existing databases, and through heuristics automatically builds and trains a set of Deep Learning based Predictive Models.
+        </MarkdownBlock>
+        <PromoSection>
+          <Button
+            href="https://github.com/mindsdb/mindsdb/releases"
+          >
+            Try Mindsdb
+          </Button>
+        </PromoSection>
+      </div>
     );
 
     const Showcase = () => {
@@ -166,6 +188,7 @@ class Index extends React.Component {
         <div className="mainContainer">
           <Features />
           <Showcase />
+          <GetMindsdb />
         </div>
       </div>
     );
